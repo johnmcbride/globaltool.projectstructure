@@ -133,153 +133,90 @@ namespace global.project.structure
             //checking for src directory.
             if ( Directory.Exists("src") )
             {
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine("src folder exists in project directory. Checking for other standard items in the project.");
-                Console.ForegroundColor = ConsoleColor.Gray;
                 srcFolderExists = true;
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine("src folder does not exist in project directory.");
-                Console.ForegroundColor = ConsoleColor.Gray;
             }
             //checking for the readme markdown file.
             if ( File.Exists("README.MD") )
             {
-                //inform user that they already have a readme markdown file in the
-                //project
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine("ReadMe markdown file exists. Checking for other standard items in the project.");
-                Console.ForegroundColor = ConsoleColor.Gray;
                 readmeExists = true;
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine("Project README does not exist in project directory.");
-                Console.ForegroundColor = ConsoleColor.Gray;
             }
 
             //checking for the editor.config file.
-            if ( File.Exists("editor.config") )
+            if ( File.Exists(".editorconfig") )
             {
-                //inform user that they already have a editor.config in the
-                //project
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine("editor.config file exists. Checking for other standard items in the project.");
-                Console.ForegroundColor = ConsoleColor.Gray;
                 editorConfigExists = true;
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine("Project editor.config does not exist in project directory.");
-                Console.ForegroundColor = ConsoleColor.Gray;
             }
 
             //checking for the license.txt file.
             if ( File.Exists("license.txt") )
             {
-                //inform user that they already have a license.txt in the
-                //project
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine("license.txt file exists. Checking for other standard items in the project.");
-                Console.ForegroundColor = ConsoleColor.Gray;
                 licenseExists = true;
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine("license.txt does not exist in project directory.");
-                Console.ForegroundColor = ConsoleColor.Gray;           
             }
             //checking for the license.txt file.
             if ( File.Exists("CONTRIBUTING.MD") )
             {
-                //inform user that they already have a contributing markdown
-                //file in the project
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine("contributing markdown file exists. Checking for other standard items in the project.");
-                Console.ForegroundColor = ConsoleColor.Gray;
                 contributingFileExists = true;
-            }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine("contributing markdown file does not exist in project directory.");
-                Console.ForegroundColor = ConsoleColor.Gray;
             }
 
             if ( File.Exists(".gitignore") )
             {
-                //inform user that they already have a contributing markdown
-                //file in the project
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
-                Console.WriteLine(".gitnore file exists. Checking for other standard items in the project.");
-                Console.ForegroundColor = ConsoleColor.Gray;
                 gitignoreExists = true;
             }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.WriteLine(".gitignore file does not exist in project directory.");
-                Console.ForegroundColor = ConsoleColor.Gray;
-            }
-            Console.WriteLine("Based on the precheck scan");
+
+            Console.WriteLine("\nInformation based on the precheck scan\n");
             Console.ForegroundColor = ConsoleColor.DarkGreen;
             if ( srcFolderExists )
             {
-                Console.WriteLine("(Exists) \t\t folder \"src\"");
+                Console.WriteLine("(Directory exists) ==========> Directory \"src\"");
             }
 
             if ( readmeExists )
             {
-                Console.WriteLine("(Exists) \t\t README.md");
+                Console.WriteLine("(File exists) ===============> README.md");
             }
             if ( editorConfigExists )
             {
-                Console.WriteLine("(Exists) \t\t editor.config");
+                Console.WriteLine("(File exists) ===============> editor.config");
             }
             if ( licenseExists )
             {
-               Console.WriteLine("(Exists) \t\t license.txt"); 
+               Console.WriteLine("(File exists) ===============> license.txt"); 
             }
             if ( contributingFileExists )
             {
-                Console.WriteLine("(Exists) \t\t CONTRIBUTING.MD");
+                Console.WriteLine("(File exists) ===============> CONTRIBUTING.MD");
             }
             if ( gitignoreExists )
             {
-               Console.WriteLine("(Exists) \t\t .gitignore"); 
+               Console.WriteLine("(File exists) ===============> .gitignore"); 
             }
             Console.ForegroundColor = ConsoleColor.Gray;
 
             Console.ForegroundColor = ConsoleColor.DarkRed;
             if ( !srcFolderExists )
             {
-                Console.WriteLine("(Would be created) \t\t folder \"src\"");
+                Console.WriteLine("(Would be created) ==========> Directory \"src\"");
             }
 
             if ( !readmeExists )
             {
-                Console.WriteLine("(Would be created) \t\t README.md");
+                Console.WriteLine("(Would be created) ==========> README.md");
             }
             if ( !editorConfigExists )
             {
-                Console.WriteLine("(Would be created) \t\t editor.config");
+                Console.WriteLine("(Would be created) ==========> editor.config");
             }
             if ( !licenseExists )
             {
-               Console.WriteLine("(Would be created) \t\t license.txt"); 
+               Console.WriteLine("(Would be created) ==========> license.txt"); 
             }
             if ( !contributingFileExists )
             {
-                Console.WriteLine("(Would be created) \t\t CONTRIBUTING.MD");
+                Console.WriteLine("(Would be created) ==========> CONTRIBUTING.MD");
             }
             if ( !gitignoreExists )
             {
-                Console.WriteLine("(Would be created) \t\t .gitignore");
+                Console.WriteLine("(Would be created) ==========> .gitignore");
             }
             Console.ForegroundColor = ConsoleColor.Gray;
 
