@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <ToolCommandName>sproj</ToolCommandName>
+    <PackAsTool>true</PackAsTool>    
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.3.4" />
+  </ItemGroup>
+</Project>
