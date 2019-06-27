@@ -2,7 +2,17 @@
 
 ## Overview
 
-This is a project that builds a dotnet global tool that, when run, helps setup a file/folder structure similar to the Microsoft open source projects.
+This is a project that builds a dotnet global tool that, when run, helps setup a file/folder structure similar to the Microsoft open source projects. The global tool will check for the following items
+
+### Items that are checked for
+- Folders
+    - src
+- Files
+    - .gitignore [What is .gitignore?]()
+    - .editorconfig [What is .editorconfig]()
+    - README.MD
+    - CONTRIBUTING.MD [What is a contributing document?]()
+    - LICENSE.txt [Help with choosing an open source license](http://www.choosealicense.com)
 
 ## Requirements
 
