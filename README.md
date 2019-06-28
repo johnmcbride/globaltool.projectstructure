@@ -51,6 +51,11 @@ $ setup-project --precheck
 You should see output similar to the following
 ![preflight check output](images/output-precheck.gif)
 
+## Submitting feature and bug reports
+
+- Feature requests - [You can use this feature template](https://github.com/johnmcbride/globaltool.projectstructure/issues/new?assignees=&labels=enhancment&template=feature_request.md&title=)
+- Filing bug reports [Use this bug report template](https://github.com/johnmcbride/globaltool.projectstructure/issues/new?assignees=&labels=bug&template=bug_report.md&title=)
+
 ## License
 
 This project is licensed under the MIT license. Please see the [LICENSE file](./LICENSE)
