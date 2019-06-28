@@ -42,14 +42,14 @@ To run the global tool in the default mode execute it like the following.
 $ setup-project
 ```
 You should see output similar to the following
-![default console output](default-output.png)
+![default console output](.\images\output-default.gif)
 
 To run the global tool in the preflight check mode execute it like the following
 ```sh
 $ setup-project --precheck
 ```
 You should see output similar to the following
-![preflight check output](default-output.png)
+![preflight check output](.\images\output-precheck.gif)
 
 ## License
 
