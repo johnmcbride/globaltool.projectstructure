@@ -8,10 +8,10 @@ This is a project that builds a dotnet global tool that, when run, helps setup a
 - Folders
     - src
 - Files
-    - .gitignore [What is .gitignore?]()
-    - .editorconfig [What is .editorconfig]()
+    - .gitignore [What is .gitignore?](https://git-scm.com/docs/gitignore)
+    - .editorconfig [What is .editorconfig](https://editorconfig.org/)
     - README.MD
-    - CONTRIBUTING.MD [What is a contributing document?]()
+    - CONTRIBUTING.MD [What is a contributing document?](https://github.blog/2012-09-17-contributing-guidelines/)
     - LICENSE.txt [Help with choosing an open source license](http://www.choosealicense.com)
 
 ## Requirements
@@ -23,7 +23,7 @@ This is a project that builds a dotnet global tool that, when run, helps setup a
 This global tool is available on the standard [nuget.org](http://www.nuget.org) package distribution system and you can install it with the following command
 
 ```sh
-dotnet tool install --global setup-project
+dotnet tool install --global DotnetSetupProjectStructure
 ```
 
 This will install the tool as a global tool that you can use in any directory.
