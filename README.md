@@ -20,7 +20,7 @@ This is a project that builds a dotnet global tool that, when run, helps setup a
 
 ## Installation
 
-This global tool is available on the standard [nuget.org](http://www.nuget.org) package distribution system and you can install it with the following command
+This global tool is available on the standard [nuget.org](https://www.nuget.org/packages/DotnetSetupProjectStructure/) package distribution system and you can install it with the following command
 
 ```sh
 dotnet tool install --global DotnetSetupProjectStructure
