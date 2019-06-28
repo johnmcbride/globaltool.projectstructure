@@ -1,3 +1,4 @@
 #directories to omit
 bin
 obj
+nupkg
