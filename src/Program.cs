@@ -7,7 +7,9 @@ namespace global.project.structure
     class Program
     {
         [Option(CommandOptionType.NoValue)]
-        public bool precheck { get; }  
+        public bool precheck { get; }
+        [Option(CommandOptionType.NoValue)]
+        public bool defaultpromptoyes { get; }
         public string editorconfigtemplate { get ; }
         public string gitignoretemplate { get; }  
         static void Main(string[] args) => CommandLineApplication.Execute<Program>(args);
@@ -80,7 +82,17 @@ namespace global.project.structure
             }
             else
             {
-                bool createLicense = Prompt.GetYesNo("Would you like to create a license file holder?",true,ConsoleColor.DarkYellow);
+                bool createLicense = false;
+                
+                if ( defaultpromptoyes )
+                {
+                    createLicense = true;
+                }
+                else
+                {
+                   createLicense = = Prompt.GetYesNo("Would you like to create a license file holder?",true,ConsoleColor.DarkYellow);
+                }
+                 
                 if ( createLicense )
                 {
                     //create the license file and populating it with just a 
@@ -97,7 +109,17 @@ namespace global.project.structure
             }
             else
             {
-                bool createEditor = Prompt.GetYesNo("Would you like to create a contributing markdown file.",true,ConsoleColor.DarkYellow);
+                bool createEditor = false;
+                
+                if ( defaultpromptoyes )
+                {
+
+                }
+                else
+                {
+                   var createEditor = Prompt.GetYesNo("Would you like to create a contributing markdown file.",true,ConsoleColor.DarkYellow);
+                }
+                
                 if ( createEditor)
                 {
                     //create the editor.config file and populating it with just a 
